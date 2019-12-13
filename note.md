@@ -30,7 +30,7 @@
 	substring则干脆将负参数都直接转换为0
 
 
-##排序
+#排序
 
 ####冒泡排序:
 	
@@ -62,4 +62,10 @@
       }
 
 
-	
+### Json
+
+####对象转Json
+	Json.stringify(obj)
+
+####Json转对象
+	Json.parse(obj)
