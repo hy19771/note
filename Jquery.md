@@ -43,3 +43,9 @@
 ####内容插入,不填内容就是获取
 	$('ul').text(content)		//不解析标签
 	$('ul').html(content)		//解析标签
+
+####修改内容
+	$('input').val('item')		//填东西就是修改,不填就是获取
+
+####获取状态
+	$('input').prop('checked',boolean)   //  boolean填了就是修改,不填就是获取 
