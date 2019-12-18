@@ -27,7 +27,7 @@
 
 ####插入节点
 	parent.apprend(childNode)		父节点添加在最后添加一个子节点
-	parent.insertBefore(参照节点,要放置的节点)
+	parent.insertBefore(要放置的节点,参照节点)
 
 ####删除节点
 	parent.removeChild(要删除的节点)
@@ -39,4 +39,38 @@
 ####节点内容操作
 	node.innerText = '<p>傻逼<p>'	不解析p标签,直接打印出来
 	node.innerHTML = '<p>傻逼<P>'	解析p标签,效果等同于插入一个子节点
+
+##节点属性操作
 	
+####设置属性值
+	img.src = ''
+	content.title = ''
+	box.className = ''
+
+####设置属性值1
+	box.setAttribute(属性名:属性值)
+
+####获取节点属性
+	box.title
+	box.getAttribute(属性名)
+
+####删除属性
+	box.removeAttribute(属性名)
+
+####在原有类名的基础上添加类名
+	box.classList.add(类名)
+
+####在原有类名的基础上删除类名
+	box.classList.remove(类名)
+
+####切换类名,无则添加,有则删除
+	box.classList.toggle(类名)
+
+####判断类名是否存在
+	box.classList.contains(类名)
+
+####绑定事件
+	element.addEventListener('事件名','事件函数',boolean)		// true为捕获,默认为冒泡
+
+####解绑事件
+	element.removeEventListener('事件名','事件函数',boolean)
