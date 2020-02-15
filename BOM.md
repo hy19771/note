@@ -1,9 +1,8 @@
-##BOM
+#BOM
 
 ###Offset
 
-
-####获取元素的宽高
+##获取元素的宽高
 	offsetWidth/Height  是盒子自身的宽高加上padding+border的值
 	offsetTop/left  是距离最近有定位的盒子的距离,没有定位就是相对于body
 	offsetParent 返回的是距离最近有定位的父级,没有就是body
@@ -115,3 +114,12 @@
 
 ####头部值
 	navigator.userAgent
+
+##JavaScript 存储对象
+
+###localStorage 用于长久保存整个网站的数据，保存的数据没有过期时间，直到手动去除。
+
+####设置值
+	localStorage.setItem("key", "value");
+
+####sessionStorage 用于临时保存同一窗口(或标签页)的数据，在关闭窗口或标签页之后将会删除这些数据。

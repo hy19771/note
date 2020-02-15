@@ -1,5 +1,12 @@
 #JQuery	
 
+##事件
+
+####点击事件
+	$('#box').click(function(){
+	
+	})
+
 ##筛选选择器
 
 ####匹配一个给定索引值的元素
@@ -142,4 +149,14 @@
 
 ####事件委托
 	$('ul').on('click','li',fn) 把li的点击事件委托给ul绑定,效果还是li的点击事件一
+
+####获取元素的offset值
+	$('div').offset().top
+
+####获取自定义属性
+	<div data-index='1'></div>
+
+	$('div').attr('data-index')
+	$('div').data('index')
+	$('div').index()
 	                                               
